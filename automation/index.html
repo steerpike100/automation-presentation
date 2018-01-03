@@ -176,29 +176,34 @@
                      <div class="col-md-12">
                         <h2>What tools are we using right now?</h2>
                         <ul>
-                        <li>Java</li>
-                        <li>Maven - a dependency management tool for Java</li>
-                        <li>Git - a version control system</li>
-                        <li>TestNG - a test frameqork for Java a bit like JUnit</li>
-                        <li>Rest Assured - java library which makes it easier to test API's (uses a 'DSL')</li>
-                        <li>Selenium WebDriver - a tool with java bindings to automate web browsers - Chrome, Firefox etc... </li>
+                           <li>Java</li>
+                           <li>Maven - a dependency management tool for Java</li>
+                           <li>Git - a version control system</li>
+                           <li>TestNG - a test frameqork for Java a bit like JUnit</li>
+                           <li>Rest Assured - java library which makes it easier to test API's (uses a 'DSL')</li>
+                           <li>Selenium WebDriver - a tool with java bindings to automate web browsers - Chrome, Firefox etc... </li>
                         </ul>
                      </div>
                   </div>
                </div>
-                       <div class="jumbotron" id="stories">
+               <div class="jumbotron" id="stories">
                   <div class="container bg-success">
                      <h1>Where are we now - Fabrix?</h1>
                      <div class="col-md-12">
                         <h3><b>Fabrix</b></h3>
                         <p>Fabrix is our Front End product which we sell branded, colourwashed and styled for many companies </p>
                         <p>browser automation is not easy for a number of reasons:</p>
-                           <ul>
-                        <li>browsers behave differently</li>
-                        <li>different websites use different technologies</li>
-                        <li>we have to contend with latency and synchronisation issues</li>
-      
+                        <ul>
+                           <li>browsers behave differently</li>
+                           <li>different websites use different technologies</li>
+                           <li>we have to contend with latency and synchronisation issues</li>
                         </ul>
+                        <p>We have a large number of websites to try and automate - more than 50 at a guess.  This is not easy when they all look
+                           different - if elements for one website are not present in the DOM of another.  
+                        </p>
+                        <p>Our test framework tries to handle this - I will demonstrate, but first, a look at how we might simply automate form filling a page in a procedural fashion, using Selenium</p>
+                        <p>lets take a look at a Fabrix site: <a href="https://uatflex.budgetair.co.uk/">Budget Air UK (UAT)</a></p>
+                        <p>...and examine how we can do some simple Selenium stuff such as form filling...</p>
                      </div>
                   </div>
                </div>
@@ -241,6 +246,17 @@
                            <li>buddy system</li>
                            <li>regular forums / meetups / confluence documentation</li>
                            <li>online training materials <a href="https://www.udemy.com/home/my-courses/learning/">Udemy</a> </li>
+                        </ul>
+                        <h2>We need to understand BDD</h2>
+                        <ul>
+                           <li>use BDD, in anger, as a project methodology</li>
+                           <li>evangelise Cucumber and show how such tools can involve the *whole* team in building the software right & building the right software</li>
+                           <li> continue building a continuous integration pipeline; get better quaility software out, faster</li>
+                           <li>show how Cucumber help Dev and Test contribute, collaboratively to 'Acceptance Tests' - to ensure the business get the software they want and we leave a legacy of regression tests</li>
+                        </ul>
+                        <h2>And finally......</h2>
+                        <ul>
+                           <li>we need to find more bugs, faster and cruciually....before they impact the customer (and our revenue)</li>
                         </ul>
                      </div>
                   </div>
