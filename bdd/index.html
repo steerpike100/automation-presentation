@@ -1,187 +1,254 @@
 <!DOCTYPE html>
 <!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js"> <!--<![endif]-->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+   <![endif]-->
+   <!--[if IE 7]>
+   <html class="no-js lt-ie9 lt-ie8">
+      <![endif]-->
+      <!--[if IE 8]>
+      <html class="no-js lt-ie9">
+         <![endif]-->
+         <!--[if gt IE 8]><!-->
+         <html class="no-js">
+            <!--<![endif]-->
+            <head>
+               <meta charset="utf-8">
+               <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+               <title></title>
+               <meta name="description" content="">
+               <meta name="viewport" content="width=device-width, initial-scale=1">
+               <link rel="stylesheet" href="css/bootstrap.min.css">
+               <!--MAIN CSS-->
+               <style>
+                  body {
+                  padding-top: 50px;
+                  padding-bottom: 20px;
+                  }
+               </style>
+               <style type="text/css">
+                  li {font-size:150%} 
+               </style>
+               <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+               <link rel="stylesheet" href="css/main.css">
+               <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+            </head>
+            <body>
+               <!--[if lt IE 7]>
+               <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+                  your browser</a> to improve your experience.
+               </p>
+               <![endif]-->
+               <!-- Fixed navbar -->
+               <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                  <div class="container">
+                     <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                           aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Paxport Automated Testing
+                        </a>
+                     </div>
+                     <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                           <!--<li class="active"><a href="#">Home</a></li>
+                              <li><a href="#about">About</a></li>
+                              <li><a href="#contact">Contact</a></li>-->
+                           <li><a href="#stories">Stories</a></li>
+                           <li><a href="#spikes">Spikes</a></li>
+                           <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menu
+                              <span class="caret"></span></a>
+                              <ul class="dropdown-menu" role="menu">
+                                 <li class="divider"></li>
+                                 <li class="dropdown-header">Nav header</li>
+                                 <li><a href="#">Separated link</a></li>
+                                 <li><a href="#">One more separated link</a></li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                     <!--/.nav-collapse -->
+                  </div>
+               </nav>
+               <div class="jumbotron">
+                  <div class="container">
+                     <h1>Road to BDD - Paxport  <img src="images/logo.png" alt="paxport" height="62" width="62"> <img src="images/cucumber.png" alt="paxport" height="62" width="62"></h1>
+                  </div>
+               </div>
+               <div id="introduction">
+               <div class="jumbotron">
+                  <div class="container bg-info">
+                     <h1>Introduction & aims</h1>
+                     <div class="col-md-12">
+                        <p>At the National Trust, we redesigned the <a href="https://www.nationaltrustjobs.org.uk/">website</a> using BDD. Not a small project - they have over 4 million members and over 500 properties.  The Website had to be responsive and serve interactive, responsive property pages, events pages and campaign pages. The core team was only about 8 but, crucially at least 5 contractors had extensive BDD experience already.  The project was a huge success</p>
+                        <p>BDD is easy to understand conceptually but hard to do well in actuality</p>
+                     </div>
+                  </div>
+               </div>
+               <div id="introduction">
+               <div class="jumbotron">
+                  <div class="container bg-success">
+                     <h1>What is BDD</h1>
+                     <div class="col-md-12">
+                        <h2>BDD = Behaviour Driven Development</h2>
+                        <p>In essence, BDD is simply a project methodology in which requirements are written as "Scenarios" (in a language called Gherkin) plus automated tests, commonly referred to as "Acceptance Tests".  
+                        <p>In Test Driven Development (TDD), a developer writes a failing test - typically at a Unit or Integration test level. They then write the minimum viable code to make the test pass. The rationale is that lean software is developed that meets requirements</p>
+                        <p>In BDD, the idea is extended - PO's, BA's, Testers and Developers collaborate to describe the requirements as 'Behaviours'. These behaviours are written as 'Scenarios' in a language called 'Gherkin'. Scenarios and Gherkin are, deliberately, non-technical languages that all business users can understand.  The Testers *AND* Developers then convert Scenarios directly into tests, most commonly using the tool Cucumber. Again, we have a failing test but:</p>
+                        <ul>
+                           <li>the test describes a behaviour at a level the business understands</li>
+                           <li>the test typically describes technology at the top of the stack - enforcing outside in development</li>
+                           <li>the test again must have code written to make it pass</li>
+                           <li>the behaviours agreed by the team therefore translate into software that meets the stakeholders a</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div id="introduction">
+               <div class="jumbotron">
+                  <div class="container bg-info">
+                     <h1>BDD - from the horses mouth</h1>
+                     <div class="col-md-12">
+                        <p>Dan North is the originator of BDD, this video is from his company, Inviqa:<a href="https://www.youtube.com/watch?v=njcHzGYv7nI">The beginners guide to BDD</a>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+                   <div id="bugs">
+                  <div class="jumbotron">
+                     <div class="container bg-info">
+                        <h1>Acceptance Criteria?</h1>
+                     </div>
+                  </div>
+               </div>
+               <div id="bugs">
+                  <div class="jumbotron">
+                     <div class="container bg-success">
+                        <h1>Three Amigos</h1>
+                        <img src="images/amigos.jpg" alt="paxport" height="150" width="350">
+                        <p>A session in which Scenarios will be written collaboratively.  Typically 3 areas of the business will represent:
+                        <ul>
+                           <li>Product Owner (and/or Business Analyst)</li>
+                           <li>Developer</li>
+                           <li>Tester</li>
+                           <p>"We have to deliver a Feature: allow customers to buy bags post-flight booking - what scenarios can we come up with in the next hour?"
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+                         <div id="bugs">
+               <div class="jumbotron">
+               <div class="container bg-info">
+                  <h1>Gherkin</h1>
+                  <p>You can use the following AND ONLY the following keywords:</p>
+                     <ul>
+                           <li>Given</li>
+                           <li>When</li>
+                           <li>Then</li> 
+                           <li>And</li>
+                         
+                        </ul>
+  
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <style>
-        body {
-            padding-top: 50px;
-            padding-bottom: 20px;
-        }
-    </style>
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/main.css">
+               </div>
+               <div id="bugs">
+                  <div class="jumbotron">
+                     <div class="container bg-info">
+                        <h1>Scenarios</h1>
+                        <p>Can be written atraight into Jira and refined later if necessary</p>
+                        <p>Some example scenarios   
+                                                 <p>Additionally:</p>
+                          <ul>
+                           <li>a Feature must have a title</li>
+                           <li>a Scenario must have a title</li>
+                           <li>a Feature can have a Background</li> 
+                  
+                         
+                        </ul>
+                        <p>Title (one line describing the story)
+ 
+<p>Narrative:
+<p>As a [role]</p>
+<p>I want [feature]</p>
+<p>So that [benefit]</p>
+ 
+<p>Acceptance Criteria: (presented as Scenarios)
+ 
+<p>Scenario 1: Title
+<p>Given [context]
+  <p>And [some more context]...
+<p>When  [event]
+<p>Then  [outcome]
+  <p>And [another outcome]...:</p>
 
-    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-</head>
-<body>
-<!--[if lt IE 7]>
-<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-<![endif]-->
-<!-- Fixed navbar -->
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Website Redesign - Sprint 15
-            </a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <!--<li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>-->
-                <li><a href="#stories">Stories</a></li>
-                <li><a href="#spikes">Spikes</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menu
-                        <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
+                        <p></p>
+                        <p><img src="images/scenarios.png" alt="paxport" height="1000" width="1000"></p>
 
-                        <li class="divider"></li>
-                        <li class="dropdown-header">Nav header</li>
-                        <li><a href="#">Separated link</a></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <!--/.nav-collapse -->
-    </div>
-</nav>
-
-
-<div class="jumbotron">
-    <div class="container">
-        <h1>Sprint 15 - Website re-design</h1>
-    </div>
-</div>
-
-<div class="jumbotron" id="stories">
-    <div class="container bg-success">
-        <h1>Stories</h1>
-
-        <div class="col-md-12">
-            <h2>View current year Place Price note</h2>
-
-            <h3><a href="http://s2natl33:8080/browse/WSR-315">WSR-315</a></h3>
-            <h4><a href="http://wrd-test.nationaltrust.org.uk/killerton">Example</a></h4>
-	    <a href="http://docs.ntplacesv2.apiary.io/">http://docs.ntplacesv2.apiary.io/</a>
-
-            <p>The price note from Vader for the current year is now displayed alongside the prices. This 
-		is a seperate fragment.
-            </p>
-        </div>
-
-        <div class="col-md-12">
-            <h2>View emergency notice in Opening Times</h2>
-
-            <h3><a href="http://s2natl33:8080/browse/WSR-303">WSR-303</a></h3>
-            <h4><a href="http://wrd-test.nationaltrust.org.uk/killerton">Example</a></h4>
-
-            <p>
-                Emergency notices are now also displayed on the opening times page. There is a styling issue 
-		which cuts off part of the text which has been raised with LBi.
-            </p>
-        </div>
-
-        <div class="col-md-12">
-            <h2>View emergency notice in Opening Times</h2>
-
-            <h3><a href="http://s2natl33:8080/browse/WSR-251">WSR-251</a></h3>
-
-            <p>
-		Carried over from the previous sprint all development work has been completed however due to 
-		dependencies on tasks for the web ops team this couldn't be progressed to an environment and 
-		therefore hasn't been tested end-to-end.
-            </p>
-        </div>
-
-        <div class="col-md-12">
-            <h2>Search Place Stories</h2>
-
-            <h3>Incomplete</h3>
-            <h4>WSR-68, WSR-314, WSR-253, WSR-254, WSR-255.</h4>
-
-            <p>
-		Although none of the search Stories have been completed there has been a lot of progress on 
-		development on the core search functionality. The major blocker to delivery has been completing 
-		integration of the developed functionality.
-            </p>
-        </div>
-
-    </div>
-</div>
-<div id="spikes">
-    <div class="jumbotron">
-        <div class="container bg-info">
-            <h1>Spikes</h1>
-
-            <div class="col-md-6">
-                <h2>SPIKE - SEARCH DESIGN - Design discussions</h2>
-
-                <h3><a href="http://s2natl33.nt.ad.local:8080/browse/WSR-334">WSR-334</a></h3>
-
-                <p>The team discussed how search as a whole will work and worked through an activity flow.</p>
-            </div>
-        </div>
-
-    </div>
-
-
-    <div id="bugs">
-        <div class="jumbotron">
-            <div class="container bg-info">
-                <h1>Bugs</h1>
-		<p>No bugs were found or fixed during the Sprint.
-            </div>
-        </div>
-    </div>
-
-
-    <!-- /container -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
-
-    <script src="js/vendor/bootstrap.min.js"></script>
-
-    <script src="js/main.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        (function (b, o, i, l, e, r) {
-            b.GoogleAnalyticsObject = l;
-            b[l] || (b[l] =
-                    function () {
-                        (b[l].q = b[l].q || []).push(arguments)
-                    });
-            b[l].l = +new Date;
-            e = o.createElement(i);
-            r = o.getElementsByTagName(i)[0];
-            e.src = '//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e, r)
-        }(window, document, 'script', 'ga'));
-        ga('create', 'UA-XXXXX-X');
-        ga('send', 'pageview');
-    </script>
-</body>
-</html>
+                     </div>
+                  </div>
+               </div>
+     
+               <div id="bugs">
+                  <div class="jumbotron">
+                     <div class="container bg-success">
+                        <h1>Cucumber</h1>
+                        <p><img src="images/cucumber_report.png" alt="paxport" height="700" width="1200"></p>
+                     </div>
+                  </div>
+               </div>
+           
+               <div id="bugs">
+                  <div class="jumbotron">
+                     <div class="container bg-success">
+                        <h1>Questions?</h1>
+                     </div>
+                  </div>
+               </div>
+               <div id="bugs">
+                  <div class="jumbotron">
+                     <div class="container bg-info">
+                        <h1>Questions?</h1>
+                     </div>
+                  </div>
+               </div>
+               <div id="bugs">
+                  <div class="jumbotron">
+                     <div class="container bg-success">
+                        <h1>Questions?</h1>
+                     </div>
+                  </div>
+               </div>
+               <div id="bugs">
+                  <div class="jumbotron">
+                     <div class="container bg-info">
+                        <h1>Questions?</h1>
+                     </div>
+                  </div>
+               </div>
+               <!-- /container -->
+               <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+               <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+               <script src="js/vendor/bootstrap.min.js"></script>
+               <script src="js/main.js"></script>
+               <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+               <script>
+                  (function (b, o, i, l, e, r) {
+                     b.GoogleAnalyticsObject = l;
+                     b[l] || (b[l] =
+                        function () {
+                           (b[l].q = b[l].q || []).push(arguments)
+                        });
+                     b[l].l = +new Date;
+                     e = o.createElement(i);
+                     r = o.getElementsByTagName(i)[0];
+                     e.src = '//www.google-analytics.com/analytics.js';
+                     r.parentNode.insertBefore(e, r)
+                  }(window, document, 'script', 'ga'));
+                  ga('create', 'UA-XXXXX-X');
+                  ga('send', 'pageview');
+               </script>
+            </body>
+         </html>
