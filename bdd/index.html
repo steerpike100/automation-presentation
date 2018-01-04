@@ -28,6 +28,11 @@
                <style type="text/css">
                   li {font-size:150%} 
                </style>
+               <style type="text/css">
+<!--
+.tab { margin-left: 40px; }
+-->
+</style>
                <link rel="stylesheet" href="css/bootstrap-theme.min.css">
                <link rel="stylesheet" href="css/main.css">
                <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -92,7 +97,7 @@
                <div id="introduction">
                <div class="jumbotron">
                   <div class="container bg-success">
-                     <h1>What is BDD</h1>
+                     <h1>Intro - what is BDD?</h1>
                      <div class="col-md-12">
                         <h2>BDD = Behaviour Driven Development</h2>
                         <p>In essence, BDD is simply a project methodology in which requirements are written as "Scenarios" (in a language called Gherkin) plus automated tests, commonly referred to as "Acceptance Tests".  
@@ -117,13 +122,29 @@
                      </div>
                   </div>
                </div>
-                   <div id="bugs">
-                  <div class="jumbotron">
-                     <div class="container bg-info">
-                        <h1>Acceptance Criteria?</h1>
+
+                        <div id="introduction">
+               <div class="jumbotron">
+                  <div class="container bg-info">
+                     <h1>User Stories</h1>
+                     <div class="col-md-12">
+                        <p>Within a BDD context, requirements are typically captured in a 'Story'. Thus would be written as a Story type Jira ticket.</p>
+                        <p>How do we know the size, the granularity of a Story? Remember the acronym <b>INVEST</b> Stories should be...</p>
+                          <ul>
+                           <li><b>I</b>dependent</li>
+                           <li><b>N</b>egotiable</li>
+                           <li><b>V</b>aluable</li>
+                           <li><b>E</b>stimatable</li>
+                           <li><b>S</b>mall</li>
+                           <li><b>T</b>estable</li>
+                        </ul>
+                        </p>
+                        The following sections will break down the constituent parts of a User Story
+                        </p>
                      </div>
                   </div>
                </div>
+         
                <div id="bugs">
                   <div class="jumbotron">
                      <div class="container bg-success">
@@ -140,10 +161,30 @@
                   </div>
                </div>
                          <div id="bugs">
-               <div class="jumbotron">
-               <div class="container bg-info">
-                  <h1>Gherkin</h1>
-                  <p>You can use the following AND ONLY the following keywords:</p>
+                  <div class="jumbotron">
+                     <div class="container bg-info">
+                        <h1>Acceptance Criteria</h1>
+                        <p>Acceptance criteria are a set of rules which cover aspects of a system’s behavior, and from which scenarios can be derived.</p>
+
+                        <p>Typically, Acceptance Criteria will sit at the top of a Story</p>
+
+                        <p>Examples:</p>
+                          <ul>
+                           <li>An infant is any child under 2 years of age</li>
+                           <li>An infant cannot have their own seat; they must sit with the lead pax</li>
+                           <li>Only one infant per adult should be allowed</li>             
+                        </ul>
+
+                     </div>
+                  </div>
+               </div>
+      
+               <div id="bugs">
+                  <div class="jumbotron">
+                     <div class="container bg-success">
+                        <h1>Scenarios</h1>
+
+                  <p>You can use the following AND ONLY the following keywords, collectively called GHERKIN:</p>
                      <ul>
                            <li>Given</li>
                            <li>When</li>
@@ -151,50 +192,38 @@
                            <li>And</li>
                          
                         </ul>
-  
+                      
+                        <p>Anatomy of a Scenario</p>
+                            <p class="tab"><b>Scenario:</b>[one line title] A party wishes to travel with one infant</p> 
+                            <p class="tab"><b>Given</b>[context] a party contains a single infant</p> 
+                            <p class="tab"><b>And</b>[more context] the infant is six months old</p> 
+                            <p class="tab"><b>When</b>[event]the website seating map is displayed </p> 
+                            <p class="tab"><b>Then</b>[outcome]the infant cannot be seated independently</p>  
+                             <p class="tab"><b>And</b>[another outcome]Tthe infant must sit with only the lead pax</p> 
 
-               </div>
-               <div id="bugs">
-                  <div class="jumbotron">
-                     <div class="container bg-info">
-                        <h1>Scenarios</h1>
-                        <p>Can be written atraight into Jira and refined later if necessary</p>
-                        <p>Some example scenarios   
-                                                 <p>Additionally:</p>
-                          <ul>
-                           <li>a Feature must have a title</li>
-                           <li>a Scenario must have a title</li>
-                           <li>a Feature can have a Background</li> 
-                  
-                         
-                        </ul>
-                        <p>Title (one line describing the story)
- 
-<p>Narrative:
-<p>As a [role]</p>
-<p>I want [feature]</p>
-<p>So that [benefit]</p>
- 
-<p>Acceptance Criteria: (presented as Scenarios)
- 
-<p>Scenario 1: Title
-<p>Given [context]
-  <p>And [some more context]...
-<p>When  [event]
-<p>Then  [outcome]
-  <p>And [another outcome]...:</p>
-
-                        <p></p>
-                        <p><img src="images/scenarios.png" alt="paxport" height="1000" width="1000"></p>
+                        <p>   </p>
 
                      </div>
                   </div>
                </div>
+
+                   <div id="bugs">
+                  <div class="jumbotron">
+                     <div class="container bg-success">
+                        <h1>So what's the difference between Acceptance Criteria and Scenarios?</h1>
+                        <p>Acceptance Criteria specify rules: they are specifications</p>
+                        <p>Scenarios - concrete <b>examples</p>of acceptance criteria</p>
+                 
+                     </div>
+                  </div>
+               </div>
+           
      
                <div id="bugs">
                   <div class="jumbotron">
                      <div class="container bg-success">
                         <h1>Cucumber</h1>
+                        <p><img src="images/scenarios.png" alt="paxport" height="1000" width="1000"></p>
                         <p><img src="images/cucumber_report.png" alt="paxport" height="700" width="1200"></p>
                      </div>
                   </div>
