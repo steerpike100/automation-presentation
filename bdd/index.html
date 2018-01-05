@@ -29,10 +29,10 @@
                   li {font-size:150%} 
                </style>
                <style type="text/css">
-<!--
-.tab { margin-left: 40px; }
--->
-</style>
+                  <!--
+                     .tab { margin-left: 40px; }
+                     -->
+               </style>
                <link rel="stylesheet" href="css/bootstrap-theme.min.css">
                <link rel="stylesheet" href="css/main.css">
                <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -122,15 +122,14 @@
                      </div>
                   </div>
                </div>
-
-                        <div id="introduction">
+               <div id="introduction">
                <div class="jumbotron">
                   <div class="container bg-info">
                      <h1>User Stories</h1>
                      <div class="col-md-12">
                         <p>Within a BDD context, requirements are typically captured in a 'Story'. Thus would be written as a Story type Jira ticket.</p>
                         <p>How do we know the size, the granularity of a Story? Remember the acronym <b>INVEST</b> Stories should be...</p>
-                          <ul>
+                        <ul>
                            <li><b>I</b>dependent</li>
                            <li><b>N</b>egotiable</li>
                            <li><b>V</b>aluable</li>
@@ -144,91 +143,101 @@
                      </div>
                   </div>
                </div>
-         
                <div id="bugs">
-                  <div class="jumbotron">
-                     <div class="container bg-success">
-                        <h1>Three Amigos</h1>
-                        <img src="images/amigos.jpg" alt="paxport" height="150" width="350">
-                        <p>A session in which Scenarios will be written collaboratively.  Typically 3 areas of the business will represent:
-                        <ul>
-                           <li>Product Owner (and/or Business Analyst)</li>
-                           <li>Developer</li>
-                           <li>Tester</li>
-                           <p>"We have to deliver a Feature: allow customers to buy bags post-flight booking - what scenarios can we come up with in the next hour?"
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-                         <div id="bugs">
                   <div class="jumbotron">
                      <div class="container bg-info">
                         <h1>Acceptance Criteria</h1>
                         <p>Acceptance criteria are a set of rules which cover aspects of a system’s behavior, and from which scenarios can be derived.</p>
-
                         <p>Typically, Acceptance Criteria will sit at the top of a Story</p>
-
                         <p>Examples:</p>
-                          <ul>
+                        <ul>
                            <li>An infant is any child under 2 years of age</li>
                            <li>An infant cannot have their own seat; they must sit with the lead pax</li>
-                           <li>Only one infant per adult should be allowed</li>             
+                           <li>Only one infant per adult should be allowed</li>
                         </ul>
-
                      </div>
                   </div>
                </div>
-      
                <div id="bugs">
                   <div class="jumbotron">
                      <div class="container bg-success">
                         <h1>Scenarios</h1>
-
-                  <p>You can use the following AND ONLY the following keywords, collectively called GHERKIN:</p>
-                     <ul>
+                        <p>You can use the following AND ONLY the following keywords, collectively called GHERKIN:</p>
+                        <ul>
                            <li>Given</li>
                            <li>When</li>
-                           <li>Then</li> 
+                           <li>Then</li>
                            <li>And</li>
-                         
                         </ul>
-                      
-                        <p>Anatomy of a Scenario</p>
-                            <p class="tab"><b>Scenario:</b>[one line title] A party wishes to travel with one infant</p> 
-                            <p class="tab"><b>Given</b>[context] a party contains a single infant</p> 
-                            <p class="tab"><b>And</b>[more context] the infant is six months old</p> 
-                            <p class="tab"><b>When</b>[event]the website seating map is displayed </p> 
-                            <p class="tab"><b>Then</b>[outcome]the infant cannot be seated independently</p>  
-                             <p class="tab"><b>And</b>[another outcome]Tthe infant must sit with only the lead pax</p> 
-
+                        <p>Anatomy of a Scenario:</p>
+                        <p class="tab"><b>Scenario:</b>[one line title] A party wishes to travel with one infant</p>
+                        <p class="tab"><b>Given</b>[context] a party contains a single infant</p>
+                        <p class="tab"><b>And</b>[more context] the infant is six months old</p>
+                        <p class="tab"><b>When</b>[event]the website seating map is displayed </p>
+                        <p class="tab"><b>Then</b>[outcome]the infant cannot be seated independently</p>
+                        <p class="tab"><b>And</b>[another outcome]Tthe infant must sit with only the lead pax</p>
                         <p>   </p>
-
                      </div>
                   </div>
                </div>
-
-                   <div id="bugs">
+               <div id="bugs">
                   <div class="jumbotron">
-                     <div class="container bg-success">
+                     <div class="container bg-info ">
                         <h1>So what's the difference between Acceptance Criteria and Scenarios?</h1>
                         <p>Acceptance Criteria specify rules: they are specifications</p>
-                        <p>Scenarios - concrete <b>examples</p>of acceptance criteria</p>
-                 
+                        <p>Scenarios - concrete <b>examples</b> of acceptance criteria</p>
+                        <p>Scenarios - help flesh out complex examples of criteria</p>
+                        <p>once we have Scenarios, we can automate them as Acceptance tests</p>
+                        <p>we can also examine where we might have gaps, edge cases and negative tests to add</p>
                      </div>
                   </div>
                </div>
-           
-     
+               <div id="bugs">
+                  <div class="jumbotron">
+                     <div class="container bg-success">
+                        <h1>Where do Scenarios come from? </h1>
+                        <h1>Three Amigos!</h1>
+                        <img src="images/amigos.jpg" alt="paxport" height="150" width="350">
+                        <p>A session in which Scenarios will be written collaboratively.  Typically 3 areas of the business will be represented:
+                        <ul>
+                           <li>Product Owner (and/or Business Analyst)</li>
+                           <li>Developer</li>
+                           <li>Tester</li>
+                           <p>"We have to deliver a Feature: allow customers to buy bags post-flight booking - what scenarios can we come up with in the next hour?"</p>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div id="bugs">
+                  <div class="jumbotron">
+                     <div class="container bg-success">
+                        <h1>Example User Story in Jira</h1>
+                        <p><img src="images/user-story.png" alt="paxport" height="800" width="1000"></p>
+                     </div>
+                  </div>
+               </div>
+               <div id="bugs">
+                  <div class="jumbotron">
+                     <div class="container bg-info">
+                        <h1>A Ubiquitous Language</h1>
+                        <p>BDD is designed to enable better communication by providing a common vocabulary and grammar that is understood by all participants. This way, business analysts, testers, developers are more likely to be all on the same page, sharing a common understanding, when requirements are being discussed.</p>
+                        </ul>
+                        <p><img src="images/cucumber-stack.jpg" alt="paxport" height="1000" width="1100"></p>
+                     </div>
+                  </div>
+               </div>
                <div id="bugs">
                   <div class="jumbotron">
                      <div class="container bg-success">
                         <h1>Cucumber</h1>
-                        <p><img src="images/scenarios.png" alt="paxport" height="1000" width="1000"></p>
-                        <p><img src="images/cucumber_report.png" alt="paxport" height="700" width="1200"></p>
+                        <p>...where Scenarios start to make their way into the technical implementation</p>
+                        <p>A Feature file:</p>
+                        <p><img src="images/scenarios.png" alt="paxport" height="800" width="900"></p>
+                           <p>A Cucumber report:</p>
+                        <p><img src="images/cucumber_report.png" alt="paxport" height="700" width="1100"></p>
                      </div>
                   </div>
                </div>
-           
                <div id="bugs">
                   <div class="jumbotron">
                      <div class="container bg-success">
