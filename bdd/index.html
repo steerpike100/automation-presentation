@@ -62,8 +62,8 @@
                            <!--<li class="active"><a href="#">Home</a></li>
                               <li><a href="#about">About</a></li>
                               <li><a href="#contact">Contact</a></li>-->
-                           <li><a href="#stories">Stories</a></li>
-                           <li><a href="#spikes">Spikes</a></li>
+                           <li><a href="#stories">Intro</a></li>
+                           <li><a href="#spikes">BDD</a></li>
                            <li class="dropdown">
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menu
                               <span class="caret"></span></a>
@@ -90,7 +90,7 @@
                      <h1>Introduction & aims</h1>
                      <div class="col-md-12">
                         <p>At the National Trust, we redesigned the <a href="https://www.nationaltrustjobs.org.uk/">website</a> using BDD. Not a small project - they have over 4 million members and over 500 properties.  The Website had to be responsive and serve interactive, responsive property pages, events pages and campaign pages. The core team was only about 8 but, crucially at least 5 contractors had extensive BDD experience already.  The project was a huge success</p>
-                        <p>BDD is easy to understand conceptually but hard to do well in actuality</p>
+                        <p>BDD is easy to understand conceptually but hard to do well in practice</p>
                      </div>
                   </div>
                </div>
@@ -124,7 +124,7 @@
                </div>
                <div id="introduction">
                <div class="jumbotron">
-                  <div class="container bg-info">
+                  <div class="container bg-success">
                      <h1>User Stories</h1>
                      <div class="col-md-12">
                         <p>Within a BDD context, requirements are typically captured in a 'Story'. Thus would be written as a Story type Jira ticket.</p>
@@ -196,9 +196,10 @@
                   <div class="jumbotron">
                      <div class="container bg-success">
                         <h1>Where do Scenarios come from? </h1>
-                        <h1>Three Amigos!</h1>
-                        <img src="images/amigos.jpg" alt="paxport" height="150" width="350">
-                        <p>A session in which Scenarios will be written collaboratively.  Typically 3 areas of the business will be represented:
+                        <h3>Three Amigos!</h3>
+                        <img src="images/amigos.jpg" alt="paxport" height="150" width="350" align="middle">
+                        <p>A session in which Scenarios will be written collaboratively.</p>  
+                        <p>Typically 3 areas of the business will be represented:
                         <ul>
                            <li>Product Owner (and/or Business Analyst)</li>
                            <li>Developer</li>
@@ -221,8 +222,8 @@
                      <div class="container bg-info">
                         <h1>A Ubiquitous Language</h1>
                         <p>BDD is designed to enable better communication by providing a common vocabulary and grammar that is understood by all participants. This way, business analysts, testers, developers are more likely to be all on the same page, sharing a common understanding, when requirements are being discussed.</p>
-                        </ul>
-                        <p><img src="images/cucumber-stack.jpg" alt="paxport" height="1000" width="1100"></p>
+                          <p>This diagram demonstrates how the BDD 'testing stack' is differentiated between business facing and technology facing elements.  But - the goal is that the ubiquitous language is used throughout and the tests become 'shared capital' across the business:</p>
+                        <p><img src="images/cucumber-stack.jpg" alt="paxport" height="800" width="900"></p>
                      </div>
                   </div>
                </div>
@@ -232,9 +233,38 @@
                         <h1>Cucumber</h1>
                         <p>...where Scenarios start to make their way into the technical implementation</p>
                         <p>A Feature file:</p>
-                        <p><img src="images/scenarios.png" alt="paxport" height="800" width="900"></p>
+                        <p><img src="images/scenarios.png" alt="paxport" height="700" width="800"></p>
                            <p>A Cucumber report:</p>
-                        <p><img src="images/cucumber_report.png" alt="paxport" height="700" width="1100"></p>
+                           <p>Once Cucumber has been run, a report can be produced to distribute to Stakeholders, showing progress of implemented features</p>
+                           <a href="file:///C:/automation-presentation/cucumber-html-reports/report-feature_bookAHoliday-feature.html"><h3>Cucumber report</h3></a></p>
+                        </div>
+                        <!-- <p><img src="images/cucumber_report.png" alt="paxport" height="700" width="1100"></p> -->
+                     </div>
+                  </div>
+               </div>
+               <div id="bugs">
+                  <div class="jumbotron">
+                     <div class="container bg-info">
+                        <h1>Technical implementation</h1>
+                        <p> - how do we organise, divide, separate features within Cucumber?</p>
+                        <p> - how do we organise, divide, separate stepDefinitions (test code) within Cucumber?</p>
+                        <p> - these are technical, logical decisions for the development team (this includes testers</p>
+                        <p>This shows how the NT Team divided their features for the Website Redesign project:</p>
+                         <img src="images/nt_features.png" alt="paxport" height="700" width="500">
+                         <p>....and this shows the corresponding structure for their stepdefinitions</p>
+                          <p><img src="images/nt_stepdefs.png" alt="paxport" height="700" width="500">
+                     </div>
+                  </div>
+               </div>
+               <div id="bugs">
+                  <div class="jumbotron">
+                     <div class="container bg-info">
+                        <h1>BDD within a Scrum context</h1>
+                        <p>the usual Scrum process and ceremonies would apply where we try and implement BDD:</p>
+                                <img src="images/scrum-process.png" alt="paxport" height="700" width="1100">
+                                <p></p>
+                            <p>...with the standard roles:</p>
+                                <img src="images/Scrum-Roles.png" alt="paxport" height="700" width="1000">     
                      </div>
                   </div>
                </div>
@@ -245,27 +275,7 @@
                      </div>
                   </div>
                </div>
-               <div id="bugs">
-                  <div class="jumbotron">
-                     <div class="container bg-info">
-                        <h1>Questions?</h1>
-                     </div>
-                  </div>
-               </div>
-               <div id="bugs">
-                  <div class="jumbotron">
-                     <div class="container bg-success">
-                        <h1>Questions?</h1>
-                     </div>
-                  </div>
-               </div>
-               <div id="bugs">
-                  <div class="jumbotron">
-                     <div class="container bg-info">
-                        <h1>Questions?</h1>
-                     </div>
-                  </div>
-               </div>
+               
                <!-- /container -->
                <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
                <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
